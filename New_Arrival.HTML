@@ -1,0 +1,208 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals</title>
+    <link rel="icon" type="image/png" href="TMJLOGOS.png">
+    <link rel="stylesheet" href="newarrival.css">
+</head> 
+<body>
+    <div class="container">
+        <header>
+            <h1>New Arrivals</h1>
+        </header>
+        <!-- selection of categories -->
+        <nav>
+            <ul>
+                <li><a href="">Jacket</a></li>
+                <li><a href="">T-shirt</a></li>
+                <li><a href="">Pants</a></li>
+                <li><a href="">Polo</a></li>
+                <li><a href="">Shirt</a></li>
+                <li><a href="">Skirt</a></li>
+                <li><a href="">Underwears</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+
+    <!-- Menu icon and categories together -->
+    <div class="menu-container">
+        <div class="menu-icon">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Categories</a></li>
+                <li><a href="">Log In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right">
+        <ul>
+            <li><a href="TMJReg.html">Register Now</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </div>
+    <!-- pictures of clothing -->
+    <table border="0" align="center" width="10%" class="picture" style="background-image: url(BGNEWARRIVALS.jpg);">
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+            <td>
+                <a href="">
+                    <img src="mainbg.jpg" alt="" width="500px" height="600px">
+                </a> <br>
+                description
+            </td>
+        </tr>
+    </table>
+    <!-- JavaScript to toggle 'active' class -->
+    <script>
+        const links = document.querySelectorAll('nav ul li a, .right ul li a');
+    
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                if (this.getAttribute('href') === '' || this.getAttribute('href') === '#') {
+                    event.preventDefault(); // Only prevent default for links with no real destination
+                }
+    
+                links.forEach(item => item.classList.remove('active'));
+    
+                this.classList.add('active');
+            });
+        });
+    </script>
+    
+</body>
+</html>
