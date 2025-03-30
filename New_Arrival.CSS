@@ -1,0 +1,128 @@
+body {
+    font-family: sans-serif;
+    background: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* The header */
+.container {
+    background: white;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    background: white;
+    color: black;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    box-shadow: 5px 1px 10px 5px rgba(0,0,0,1);
+    position: relative;
+}
+/* the categories */
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+nav ul li a:hover{
+    color: grey;
+}
+/* Menu icon and categories together */
+.menu-container {
+    position: absolute;
+    top: 27.9px;
+    left: 60px; 
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    margin-right: 20px;
+}
+
+.menu-icon:hover {
+    color: grey;
+}
+
+
+nav ul li a.active,
+.right ul li a.active {
+    color: black;
+    font-weight: bold;
+}
+
+.right {
+    position: absolute;
+    top: 30px;
+    right: 60px; 
+    display: flex; 
+    align-items: center; 
+}
+
+.right ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    font-size: 25px;
+    margin-top: 4.5px;
+}
+
+.right ul li {
+    margin: 0 10px; 
+    display: inline; 
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: #333; 
+}
+
+.right ul li a:hover {
+    color: grey;
+}
+.selection table{
+
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    width: 50%;
+    text-decoration: none;
+    color: black;
+}
+.selection table tr th a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+/* tables of picture */
+.picture{
+    width: 100%;
+    height: 300px;
+}
+.picture tr td{
+    font-size: 25px;
+}
